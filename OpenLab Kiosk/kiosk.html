@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenLab Infostation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="home" class="page">
+        <img src="titleimage.jpg" alt="Title Image" class="responsive-image">
+        <h1>Welcome to the OpenLab Infostation!</h1>
+        <p>To learn more about OpenLab and our workshops, click on the buttons below!</p>
+        <button onclick="navigate('page1')">Current OpenLab Workshops</button>
+        <button onclick="navigate('page2')">What is OpenLab?</button>
+    </div>
+
+    <div id="page1" class="page" style="display:none;">
+        <img src="workshopPageHeader.png" alt="Workshop Page Header" class="responsive-image">
+        <h1>Learn how to use our machines and other skills!</h1>
+        <p>The OpenLab hosts a variety of student staff run workshops using our equipment! Check back often as more get added!</p>
+        <p>Here is the current list of workshops with QR codes to sign up for them! Spots are limited and vary per workshop.</p>
+        <div id="workshopImages" class="workshop-grid"></div>
+        <button onclick="navigate('home')">Home</button>
+    </div>
+
+    <div id="page2" class="page" style="display:none;">
+        <img src="infoPageHeader.png" alt="Info Page Header" class="responsive-image">
+        <h1>A University of Pittsburgh makerspace open for staff and students!</h1>
+        <img src="OpenLab.png" alt="OpenLab Image" class="responsive-image">
+        <img src="OLSpiel.png" alt="OL Spiel Image" class="spiel-grid">
+        <button onclick="window.open('https://canvas.pitt.edu', '_blank')">Sign up for our Canvas here!</button>
+        <button onclick="navigate('home')">Home</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('windows97.png');
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center top;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.page {
+    width: 100%;
+    max-width: 800px; /* Adjusted for 9-inch screen */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    display: block;
+    margin: 10px auto;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.workshop-grid {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.spiel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.workshop-image, .spiel-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    .page {
+        padding: 5px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+}
